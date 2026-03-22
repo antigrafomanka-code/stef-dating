@@ -234,8 +234,8 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               { name: "Ronald, Entrepreneur", text: "I spent 6 months getting flaked on by women I actually liked. 8 weeks with Stef — she asked me to be exclusive." },
-              { name: "Lokio", text: "Couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar." },
-              { name: "Hitesh", text: "Had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl." },
+              { name: "Lokio, Business Owner", text: "I couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar. The system works." },
+              { name: "Hitesh, Banker, Amsterdam", text: "I had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl." },
             ].map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="rounded-3xl p-10 h-full flex flex-col justify-between border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
