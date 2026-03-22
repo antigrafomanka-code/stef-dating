@@ -1,0 +1,197 @@
+Build a one-page website for Stef Dating — a dating coaching business based in Brussels for high-achieving men.
+
+TAGLINE: "Play DIRECT. Or stay average forever."
+
+BRAND PHILOSOPHY:
+High achievers build everything in their life by going directly after what they want. Except dating. There they go indirect — apps, social circle, waiting, hoping. It keeps them in the game for years. The only exit is the most direct move: cold approach. Not as a pickup technique. As the tool that puts you in full control of who you end up with.
+
+BRAND VOICE:
+Raw. Honest. Confident. No fluff. Short sentences. Like a man who figured it out and tells it straight. Not a motivational speaker. Not a pickup artist. The guy who got out of the game and shows others how.
+
+DESIGN — CRITICAL, FOLLOW EXACTLY:
+- Page background: warm off-white #F5F1EC — applied to every section unless stated otherwise
+- All main headlines: large, bold, steel blue-grey #6B8FA8
+- Body text: dark charcoal #2C2C2A
+- CTA buttons: deep charcoal #2C2C2A background, white text
+- Secondary button: transparent background, #2C2C2A border and text
+- Logo: "Stef Dating" in script/signature font, top center
+- Rounded corners on all image and video blocks
+- Generous white space between every section — let the copy breathe
+- No stock photos of couples, no generic imagery
+- Mobile-first layout
+- Strong geometric sans-serif for headlines (like Inter or Neue Haas Grotesk)
+
+SECTIONS:
+
+--- SECTION 1: HERO ---
+Layout: centered, full width
+
+Top: Logo "Stef Dating" in script font, centered
+
+Headline (large, bold, #6B8FA8, centered):
+"Play DIRECT.
+Or stay average forever."
+
+Subtext (#2C2C2A, 18px, centered):
+"I'm Stef. I coach high-achieving men to cold approach — the most direct path to the woman you want and the exit from the game."
+
+Two CTA buttons centered below subtext:
+- Primary: dark #2C2C2A background, white text — "APPLY FOR COACHING"
+- Secondary: transparent, dark border — "WATCH HOW IT WORKS"
+
+VIDEO FRAME — directly below the buttons:
+- Large centered video embed block with rounded corners
+- Placeholder for an Instagram reel / vertical video
+- Rounded corners, subtle shadow, centered on page
+- This is the hero media — make it prominent
+
+--- SECTION 2: THE ENEMY ---
+Background: #F5F1EC
+
+Headline (#6B8FA8, bold, large):
+"Every other coach teaches you how to play the game better."
+
+Subheadline (#2C2C2A):
+"More lines. Better profile. More swipes. They're optimizing the wrong thing."
+
+3 column cards (#F5F1EC background, thin border):
+1. "Apps" — "You're one of 500 options. She's not even looking at you."
+2. "Social circle" — "Waiting for the right introduction. Still waiting."
+3. "Better techniques" — "More videos. More theory. Zero approaches."
+
+Bold centered line below cards (#2C2C2A):
+"None of this gets you out. It just makes you better at being stuck."
+
+--- SECTION 3: THE GUT PUNCH ---
+Background: FULL WIDTH DARK #2C2C2A — this entire section is dark
+All text: white #FFFFFF
+Large generous padding top and bottom
+
+Opening lines (large, bold, white):
+"She doesn't know about your bank account.
+She doesn't know about your inner work.
+She doesn't know you exist."
+
+Body text (medium, light grey #B0ADA8):
+"You spent 3 years getting fit.
+Bought the car.
+Read the books.
+Did the therapy.
+
+She still doesn't know you exist.
+
+Because all of it is indirect.
+
+She can't see your bank account from across the coffee shop.
+She can't feel your confidence from your Instagram profile.
+She doesn't know what you drive.
+
+The only thing she knows is whether you walked up or you didn't."
+
+Closing line (large, bold, white):
+"That's it. That's the whole game.
+And the only way to win it is to stop playing it."
+
+--- SECTION 4: THE DIRECT PHILOSOPHY ---
+Background: #F5F1EC
+
+Two column layout:
+
+Left column: large bold text (#6B8FA8):
+"The most direct path to the relationship you want is the most direct approach."
+
+Right column: paragraph (#2C2C2A):
+"High achievers don't wait. They don't hope. They go after what they want — in business, in life.
+
+Except here.
+
+In dating, they go indirect. Apps. Algorithms. Social circles. Waiting for the perfect moment.
+
+It costs them years.
+
+Cold approach is not a pickup technique. It's the only move that puts you fully in control of who you end up with.
+
+That's the exit."
+
+--- SECTION 5: WHO THIS IS FOR ---
+Background: #F5F1EC
+
+Headline (#6B8FA8, bold, large, centered):
+"This is for men who are done settling."
+
+4 short lines stacked, large text (#2C2C2A), centered, one per line:
+"You've built a career. You come home alone."
+"The girls you like flake. The rest don't excite you."
+"You've watched 100 videos. Approached 0 women."
+"You're not bad with women. You're using the wrong strategy."
+
+Bold line centered below (#2C2C2A):
+"If that's you — you're in the right place."
+
+--- SECTION 6: HOW IT WORKS ---
+Background: #F5F1EC
+
+Headline (#6B8FA8, bold, large, centered):
+"The Direct Exit. 3 steps."
+
+3 column layout:
+
+Step 1 — DIAGNOSE
+"We find exactly what's keeping you indirect. Not what you think. What actually is."
+
+Step 2 — BUILD
+"You get a system built for your life. Your city. Your standards. Your schedule."
+
+Step 3 — EXECUTE
+"You approach. You get feedback. You improve. Fast. Until the game is over."
+
+--- SECTION 7: RESULTS ---
+Background: #F5F1EC
+
+Headline (#6B8FA8, bold, large, centered):
+"Same man. Direct approach. Different life."
+
+3 cards with dark #2C2C2A background, white text, rounded corners:
+
+Card 1: "Ronald spent 6 months getting flaked on by women he actually liked. 8 weeks in — she asked him to be exclusive."
+Card 2: "Lokio couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar."
+Card 3: "Hitesh had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl."
+
+--- SECTION 8: ABOUT STEF ---
+Background: #F5F1EC
+
+Two column layout:
+Left: photo of Stef — real, confident, real environment, rounded corners
+Right: 
+Headline (#6B8FA8, bold):
+"I spent years figuring this out. You don't have to."
+
+Paragraph (#2C2C2A):
+"Based in Brussels. Coaching high-achieving men across Europe and globally.
+
+I don't teach game. I teach the exit from it.
+
+One-on-one only. Limited spots. Results or I don't take your money."
+
+--- SECTION 9: FINAL CTA ---
+Background: FULL WIDTH DARK #2C2C2A
+All text white
+
+Large headline (white, bold):
+"Play DIRECT.
+Or stay average forever."
+
+Subtext (light grey #B0ADA8):
+"12 weeks. One-on-one. Built around your life."
+
+CTA button (white background, dark text):
+"APPLY FOR COACHING"
+
+Small line below (light grey):
+"Not for everyone. If you're not ready to do the work — don't apply."
+
+--- FOOTER ---
+Background: #2C2C2A
+Text: white
+"Stef Dating | Brussels"
+Links: Apply | Instagram | YouTube

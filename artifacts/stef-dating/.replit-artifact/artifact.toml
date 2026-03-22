@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Stef Dating"
+version = "1.0.0"
+id = "artifacts/stef-dating"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22800
+
+[services.development]
+run = "pnpm --filter @workspace/stef-dating run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/stef-dating", "run", "build" ]
+publicDir = "artifacts/stef-dating/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22800"
+BASE_PATH = "/"

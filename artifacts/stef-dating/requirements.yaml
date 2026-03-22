@@ -1,0 +1,5 @@
+packages:
+  "framer-motion": "For premium page transitions, scroll-triggered fade-ups, and modal animations"
+  "@hookform/resolvers": "Zod validation for the application form"
+  "react-hook-form": "Form state management"
+  "zod": "Schema validation for forms"
