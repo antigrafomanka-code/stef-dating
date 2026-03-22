@@ -233,7 +233,7 @@ export default function LandingPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
-              { name: "Ronald", text: "Spent 6 months getting flaked on by women he actually liked. 8 weeks in — she asked him to be exclusive." },
+              { name: "Ronald, Entrepreneur", text: "I spent 6 months getting flaked on by women I actually liked. 8 weeks with Stef — she asked me to be exclusive." },
               { name: "Lokio", text: "Couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar." },
               { name: "Hitesh", text: "Had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl." },
             ].map((t, i) => (
