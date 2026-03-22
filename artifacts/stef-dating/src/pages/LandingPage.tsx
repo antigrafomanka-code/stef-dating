@@ -72,17 +72,15 @@ export default function LandingPage() {
         </FadeIn>
 
         <FadeIn delay={0.5} className="w-full">
-          {/* VIDEO PLACEHOLDER */}
-          <div className="relative w-full max-w-5xl aspect-video bg-brand-dark rounded-3xl mx-auto flex items-center justify-center shadow-2xl overflow-hidden group cursor-pointer border border-brand-dark/10">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-0" />
-            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors z-0" />
-            
-            <div className="flex flex-col items-center gap-4 z-10 transform group-hover:scale-105 transition-transform duration-500">
-              <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.2)] border border-white/20">
-                <Play className="w-8 h-8 text-white ml-1 fill-white" />
-              </div>
-              <span className="text-white font-medium tracking-widest uppercase text-sm">Your video here</span>
-            </div>
+          {/* HERO VIDEO EMBED */}
+          <div className="relative w-full max-w-5xl aspect-video mx-auto rounded-3xl overflow-hidden shadow-2xl">
+            <iframe
+              src="https://www.youtube.com/embed/OuY_ELB0B8g"
+              title="Stef Dating — Play Direct"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
           </div>
         </FadeIn>
       </section>
@@ -238,9 +236,19 @@ export default function LandingPage() {
               { name: "Hitesh, Banker, Amsterdam", text: "I had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl." },
             ].map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="rounded-3xl p-10 h-full flex flex-col justify-between border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
-                  <p className="text-xl md:text-2xl text-white font-medium leading-relaxed mb-8">"{t.text}"</p>
-                  <span className="text-brand-blue font-black tracking-widest uppercase text-sm">— {t.name}</span>
+                <div className="rounded-3xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
+                  {/* Video placeholder */}
+                  <div className="relative w-full aspect-video bg-black/40 flex items-center justify-center group cursor-pointer flex-shrink-0">
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                    <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-300 z-10">
+                      <Play className="w-6 h-6 text-white ml-0.5 fill-white" />
+                    </div>
+                  </div>
+                  {/* Quote + attribution */}
+                  <div className="p-8 flex flex-col justify-between flex-1">
+                    <p className="text-xl text-white font-medium leading-relaxed mb-6">"{t.text}"</p>
+                    <span className="text-brand-blue font-black tracking-widest uppercase text-sm">— {t.name}</span>
+                  </div>
                 </div>
               </FadeIn>
             ))}
