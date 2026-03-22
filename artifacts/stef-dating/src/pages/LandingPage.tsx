@@ -222,26 +222,29 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 7. RESULTS SECTION */}
-      <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <FadeIn className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-            Same man. Direct approach.<br/>Different life.
-          </h2>
-        </FadeIn>
+      {/* 7. RESULTS / TESTIMONIALS SECTION */}
+      <section id="testimonials" className="bg-brand-dark py-24 md:py-40 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <FadeIn className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
+              Same man. Direct approach.<br/>Different life.
+            </h2>
+          </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {[
-            "Ronald spent 6 months getting flaked on by women he actually liked. 8 weeks in — she asked him to be exclusive.",
-            "Lokio couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar.",
-            "Hitesh had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl."
-          ].map((testimonial, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="bg-brand-dark text-white rounded-3xl p-10 h-full flex items-center border-l-4 border-brand-blue shadow-2xl hover:-translate-y-2 transition-transform duration-300">
-                <p className="text-xl md:text-2xl font-medium leading-relaxed italic">"{testimonial}"</p>
-              </div>
-            </FadeIn>
-          ))}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {[
+              { name: "Ronald", text: "Spent 6 months getting flaked on by women he actually liked. 8 weeks in — she asked him to be exclusive." },
+              { name: "Lokio", text: "Couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar." },
+              { name: "Hitesh", text: "Had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl." },
+            ].map((t, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <div className="rounded-3xl p-10 h-full flex flex-col justify-between border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
+                  <p className="text-xl md:text-2xl text-white font-medium leading-relaxed mb-8">"{t.text}"</p>
+                  <span className="text-brand-blue font-black tracking-widest uppercase text-sm">— {t.name}</span>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
