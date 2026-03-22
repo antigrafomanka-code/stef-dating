@@ -28,7 +28,7 @@ export default function LandingPage() {
         style={{ opacity: headerOpacity, backgroundColor: headerBg, boxShadow: headerShadow }}
         className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md transition-all"
       >
-        <span className="font-script text-3xl font-bold text-brand-dark">Stef Dating</span>
+        <span className="font-script text-3xl text-brand-dark tracking-wider">STEF DATING</span>
         <button 
           onClick={() => setIsModalOpen(true)} 
           className="text-sm font-bold tracking-widest uppercase text-brand-dark hover:text-brand-blue transition-colors px-4 py-2 hover:bg-brand-dark/5 rounded-full"
@@ -40,7 +40,7 @@ export default function LandingPage() {
       {/* 1. HERO SECTION */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
-          <span className="font-script text-5xl md:text-7xl text-brand-dark mb-12 block">Stef Dating</span>
+          <span className="font-script text-5xl md:text-7xl text-brand-dark mb-12 block tracking-wider">STEF DATING</span>
         </FadeIn>
         
         <FadeIn delay={0.2}>
@@ -307,7 +307,7 @@ export default function LandingPage() {
       <footer className="bg-brand-dark text-white border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <span className="font-script text-3xl font-bold block mb-2">Stef Dating</span>
+            <span className="font-script text-3xl block mb-2 tracking-wider">STEF DATING</span>
             <span className="text-brand-light text-sm tracking-widest uppercase">Brussels, Belgium</span>
           </div>
           
