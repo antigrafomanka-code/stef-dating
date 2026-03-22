@@ -16,6 +16,12 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### `artifacts/stef-dating` (`@workspace/stef-dating`)
+
+One-page marketing website for Stef Dating coaching business (Brussels). Built with React + Vite. All sections on a single scrolling page in `src/pages/LandingPage.tsx`. Features an "Apply for Coaching" modal that submits to `POST /api/applications` and saves to PostgreSQL.
+
 ## Structure
 
 ```text
