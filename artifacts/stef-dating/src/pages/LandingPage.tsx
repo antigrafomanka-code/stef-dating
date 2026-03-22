@@ -73,7 +73,7 @@ export default function LandingPage() {
 
         <FadeIn delay={0.5} className="w-full">
           {/* VIDEO PLACEHOLDER */}
-          <div className="relative w-full max-w-[340px] aspect-[9/16] bg-brand-dark rounded-3xl mx-auto flex items-center justify-center shadow-2xl overflow-hidden group cursor-pointer border border-brand-dark/10">
+          <div className="relative w-full max-w-5xl aspect-video bg-brand-dark rounded-3xl mx-auto flex items-center justify-center shadow-2xl overflow-hidden group cursor-pointer border border-brand-dark/10">
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-0" />
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors z-0" />
             
