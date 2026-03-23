@@ -5,7 +5,7 @@
   /* Brand Palette mapped to HSL for precise Tailwind v4 support */
   --color-brand-bg: hsl(32 27% 94%);       /* #F5F1EC Warm off-white */
   --color-brand-dark: hsl(60 2% 17%);      /* #2C2C2A Dark charcoal */
-  --color-brand-blue: hsl(205 28% 54%);    /* #6B8FA8 Steel blue-grey */
+  --color-brand-blue: hsl(211 100% 50%);    /* #0078FF Steel blue-grey */
   --color-brand-light: hsl(40 5% 67%);     /* #B0ADA8 Light grey */
   --color-brand-photo: hsl(35 12% 81%);    /* #D4CFC8 Photo placeholder bg */
 
