@@ -176,28 +176,34 @@ export default function LandingPage() {
       <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
         <FadeIn className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-            This is for men who are done settling.
+            Level up or stay average forever.
           </h2>
         </FadeIn>
 
         <div className="flex flex-col items-center gap-8 text-2xl md:text-4xl font-bold text-brand-dark text-center max-w-4xl mx-auto mb-20">
           <FadeIn delay={0.1}>
-            <p>You've built a career. You come home alone.</p>
+            <p>You level up in business.</p>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p>The girls you like flake. The rest don't excite you.</p>
+            <p>You level up in the gym.</p>
           </FadeIn>
           <FadeIn delay={0.3}>
-            <p>You've watched 100 videos. Approached 0 women.</p>
+            <p>You level up in every area of your life.</p>
           </FadeIn>
           <FadeIn delay={0.4}>
-            <p>You're not bad with women. You're using the wrong strategy.</p>
+            <p>Except this one.</p>
+          </FadeIn>
+          <FadeIn delay={0.5}>
+            <p>The woman of your dreams doesn't fall on your lap.</p>
+          </FadeIn>
+          <FadeIn delay={0.6}>
+            <p>You go get her.</p>
           </FadeIn>
         </div>
 
-        <FadeIn delay={0.5}>
+        <FadeIn delay={0.7}>
           <p className="text-2xl md:text-3xl font-black text-center text-brand-blue bg-brand-blue/10 py-8 px-6 rounded-2xl mx-auto max-w-3xl">
-            If that's you — you're in the right place.
+            That's DIRECT.
           </p>
         </FadeIn>
       </section>
