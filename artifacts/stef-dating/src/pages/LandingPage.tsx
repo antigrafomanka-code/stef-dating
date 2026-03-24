@@ -121,45 +121,14 @@ export default function LandingPage() {
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-16">
-              She doesn't know about your bank account. <br />
               She doesn't know about your inner work. <br />
               <span className="text-brand-blue">
-                She doesn't know you exist.
+                The only thing she knows is whether you walked up or you didn't.
               </span>
             </h2>
           </FadeIn>
 
-          <FadeIn delay={0.2}>
-            <div className="text-xl md:text-3xl text-brand-light font-medium leading-relaxed space-y-8 max-w-3xl border-l-2 border-brand-light/20 pl-6 md:pl-10">
-              <p>
-                You spent 3 years getting fit.
-                <br />
-                Bought the car.
-                <br />
-                Read the books.
-                <br />
-                Did the therapy.
-              </p>
-              <p className="text-white font-bold">
-                She still doesn't know you exist.
-              </p>
-              <p className="italic text-brand-light/80">
-                Because all of it is indirect.
-              </p>
-              <p>
-                She can't see your bank account from across the coffee shop.
-                <br />
-                She can't feel your confidence from your Instagram profile.
-                <br />
-                She doesn't know what you drive.
-              </p>
-              <p className="text-white">
-                The only thing she knows is whether you walked up or you didn't.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.4} className="mt-24 pt-16 border-t border-white/10">
+          <FadeIn delay={0.2} className="mt-24 pt-16 border-t border-white/10">
             <h3 className="text-3xl md:text-5xl font-black text-white leading-tight">
               That's it. That's the whole game. <br />
               And the only way to win it is to stop playing it.
