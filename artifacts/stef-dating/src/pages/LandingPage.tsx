@@ -160,14 +160,6 @@ export default function LandingPage() {
               In dating, they go indirect. Apps. Algorithms. Social circles.
               Waiting for the perfect moment.
             </p>
-            <p className="text-brand-blue font-bold">It costs them years.</p>
-            <p>
-              Cold approach is not a pickup technique. It's the only move that
-              puts you fully in control of who you end up with.
-            </p>
-            <p className="font-black text-3xl md:text-4xl mt-12 pt-12 border-t-2 border-brand-dark">
-              That's the exit.
-            </p>
           </FadeIn>
         </div>
       </section>
