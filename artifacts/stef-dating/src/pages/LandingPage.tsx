@@ -59,7 +59,7 @@ export default function LandingPage() {
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             I'm Stef. I coach high-achieving men to cold approach — the most
-            direct path to the woman you want and the exit from the game.
+            direct path to the woman you want.
           </p>
         </FadeIn>
 
