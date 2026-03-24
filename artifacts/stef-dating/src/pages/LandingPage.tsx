@@ -182,21 +182,9 @@ export default function LandingPage() {
 
         <div className="flex flex-col items-center gap-8 text-2xl md:text-4xl font-bold text-brand-dark text-center max-w-4xl mx-auto mb-20">
           <FadeIn delay={0.1}>
-            <p>You level up in business.</p>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p>You level up in the gym.</p>
-          </FadeIn>
-          <FadeIn delay={0.3}>
-            <p>You level up in every area of your life.</p>
-          </FadeIn>
-          <FadeIn delay={0.4}>
-            <p>Except this one.</p>
-          </FadeIn>
-          <FadeIn delay={0.5}>
             <p>The woman of your dreams doesn't fall on your lap.</p>
           </FadeIn>
-          <FadeIn delay={0.6}>
+          <FadeIn delay={0.2}>
             <p>You go get her.</p>
           </FadeIn>
         </div>
