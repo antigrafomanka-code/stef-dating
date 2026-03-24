@@ -97,73 +97,6 @@ export default function LandingPage() {
         </FadeIn>
       </section>
 
-      {/* 2. THE ENEMY SECTION */}
-      <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <FadeIn className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue mb-6">
-            Every other coach teaches you how to play the game better.
-          </h2>
-          <p className="text-xl md:text-2xl text-brand-dark font-medium max-w-3xl mx-auto">
-            More lines. Better profile. More swipes. They're optimizing the
-            wrong thing.
-          </p>
-        </FadeIn>
-
-        <FadeIn>
-          <p className="text-2xl md:text-3xl font-bold text-brand-dark text-center max-w-4xl mx-auto">
-            Apps, social circle, better techniques. None of this gets you out. It just makes you better at being stuck.
-          </p>
-        </FadeIn>
-      </section>
-
-      {/* 3. THE GUT PUNCH SECTION */}
-      <section className="bg-brand-dark text-white py-32 md:py-48 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <FadeIn>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-16">
-              She doesn't know about your inner work. <br />
-              <span className="text-brand-blue">
-                The only thing she knows is whether you walked up or you didn't.
-              </span>
-            </h2>
-          </FadeIn>
-
-          <FadeIn delay={0.2} className="mt-24 pt-16 border-t border-white/10">
-            <h3 className="text-3xl md:text-5xl font-black text-white leading-tight">
-              That's it. That's the whole game. <br />
-              And the only way to win it is to stop playing it.
-            </h3>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* 4. THE DIRECT PHILOSOPHY SECTION */}
-      <section className="py-24 md:py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          <FadeIn>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue leading-tight sticky top-32">
-              The most direct path to the relationship you want is the most
-              direct approach.
-            </h2>
-          </FadeIn>
-
-          <FadeIn
-            delay={0.2}
-            className="text-xl md:text-2xl text-brand-dark font-medium leading-relaxed space-y-8"
-          >
-            <p>
-              High achievers don't wait. They don't hope. They go after what
-              they want — in business, in life.
-            </p>
-            <p className="font-bold text-2xl md:text-3xl">Except here.</p>
-            <p>
-              In dating, they go indirect. Apps. Algorithms. Social circles.
-              Waiting for the perfect moment.
-            </p>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* 5. WHO THIS IS FOR SECTION */}
       <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
         <FadeIn className="text-center mb-16">
@@ -188,58 +121,7 @@ export default function LandingPage() {
         </FadeIn>
       </section>
 
-      {/* 6. HOW IT WORKS SECTION */}
-      <section
-        id="how-it-works"
-        className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
-      >
-        <FadeIn className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-            The Direct Exit. 3 steps.
-          </h2>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
-          {/* Connecting line on desktop */}
-          <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-[2px] bg-brand-dark/10 z-0" />
-
-          {[
-            {
-              num: "01",
-              title: "DIAGNOSE",
-              text: "We find exactly what's keeping you indirect. Not what you think. What actually is.",
-            },
-            {
-              num: "02",
-              title: "BUILD",
-              text: "You get a system built for your life. Your city. Your standards. Your schedule.",
-            },
-            {
-              num: "03",
-              title: "EXECUTE",
-              text: "You approach. You get feedback. You improve. Fast. Until the game is over.",
-            },
-          ].map((step, i) => (
-            <FadeIn key={i} delay={i * 0.1} className="relative z-10">
-              <div className="flex flex-col items-center text-center group">
-                <div className="w-24 h-24 rounded-full bg-brand-bg border-4 border-brand-bg shadow-[0_0_0_2px_rgba(44,44,42,0.1)] flex items-center justify-center mb-8 relative overflow-hidden group-hover:border-brand-blue transition-colors">
-                  <span className="text-3xl font-black text-brand-dark group-hover:scale-110 transition-transform">
-                    {step.num}
-                  </span>
-                </div>
-                <h3 className="text-2xl font-black text-brand-dark mb-4 uppercase tracking-widest">
-                  {step.title}
-                </h3>
-                <p className="text-lg text-brand-dark/80 font-medium leading-relaxed max-w-xs">
-                  {step.text}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </section>
-
-      {/* 7. RESULTS / https://www.youtube.com/watch?v=_oM7g4ns6T0S SECTION */}
+      {/* 7. RESULTS SECTION */}
       <section
         id="testimonials"
         className="bg-brand-dark py-24 md:py-40 px-4 sm:px-6 lg:px-8"
@@ -337,6 +219,33 @@ export default function LandingPage() {
               </p>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* 4. THE DIRECT PHILOSOPHY SECTION */}
+      <section className="py-24 md:py-40 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-blue leading-tight sticky top-32">
+              The most direct path to the relationship you want is the most
+              direct approach.
+            </h2>
+          </FadeIn>
+
+          <FadeIn
+            delay={0.2}
+            className="text-xl md:text-2xl text-brand-dark font-medium leading-relaxed space-y-8"
+          >
+            <p>
+              High achievers don't wait. They don't hope. They go after what
+              they want — in business, in life.
+            </p>
+            <p className="font-bold text-2xl md:text-3xl">Except here.</p>
+            <p>
+              In dating, they go indirect. Apps. Algorithms. Social circles.
+              Waiting for the perfect moment.
+            </p>
+          </FadeIn>
         </div>
       </section>
 
