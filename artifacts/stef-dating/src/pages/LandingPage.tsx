@@ -44,12 +44,6 @@ export default function LandingPage() {
       {/* 1. HERO SECTION */}
       <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
-          <span className="font-script text-5xl md:text-7xl text-brand-dark mb-12 block tracking-wider">
-            STEF DATING
-          </span>
-        </FadeIn>
-
-        <FadeIn delay={0.2}>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
             Play DIRECT. <br />
             <span className="text-brand-dark">Or stay average forever.</span>
@@ -58,8 +52,7 @@ export default function LandingPage() {
 
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
-            I'm Stef. I coach high-achieving men to cold approach, the most
-            direct path to the woman you want.
+            I'm Stef. I help high-achieving men get the girlfriend they want in less than 12 weeks by mastering cold approach and confidence.
           </p>
         </FadeIn>
 
