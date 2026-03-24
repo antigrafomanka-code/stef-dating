@@ -109,37 +109,9 @@ export default function LandingPage() {
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
-          {[
-            {
-              title: "Apps",
-              desc: "You're one of 500 options. She's not even looking at you.",
-            },
-            {
-              title: "Social circle",
-              desc: "Waiting for the right introduction. Still waiting.",
-            },
-            {
-              title: "Better techniques",
-              desc: "More videos. More theory. Zero approaches.",
-            },
-          ].map((card, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="h-full border border-brand-dark/10 rounded-2xl p-10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:border-brand-dark/20 transition-all duration-300 bg-brand-bg group">
-                <h3 className="text-2xl font-bold text-brand-dark mb-4 group-hover:text-brand-blue transition-colors">
-                  {card.title}
-                </h3>
-                <p className="text-brand-dark/70 text-lg leading-relaxed">
-                  {card.desc}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-
         <FadeIn>
           <p className="text-2xl md:text-3xl font-bold text-brand-dark text-center max-w-4xl mx-auto">
-            None of this gets you out. It just makes you better at being stuck.
+            Apps, social circle, better techniques. None of this gets you out. It just makes you better at being stuck.
           </p>
         </FadeIn>
       </section>
