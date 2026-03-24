@@ -1,12 +1,9 @@
-import { useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Play } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
 
 const APPLY_URL = "https://stefvervaet.youcanbook.me/";
 
 export default function LandingPage() {
-
   const { scrollY } = useScroll();
   const headerOpacity = useTransform(scrollY, [0, 50, 100], [1, 0, 1]);
   const headerBg = useTransform(
@@ -22,7 +19,6 @@ export default function LandingPage() {
 
   return (
     <div className="w-full bg-brand-bg min-h-screen">
-
       {/* STICKY HEADER */}
       <motion.nav
         style={{
@@ -316,7 +312,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 7. RESULTS / TESTIMONIALS SECTION */}
+      {/* 7. RESULTS / https://www.youtube.com/watch?v=_oM7g4ns6T0S SECTION */}
       <section
         id="testimonials"
         className="bg-brand-dark py-24 md:py-40 px-4 sm:px-6 lg:px-8"
@@ -333,27 +329,30 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Ronald, Entrepreneur",
-                text: "I spent 6 months getting flaked on by women I actually liked. 8 weeks with Stef — she asked me to be exclusive.",
+                name: "Steve L., Entrepreneur",
+                text: "Getting 1-1 custom feedback from Stef was the most valuable experience.",
+                videoUrl: "https://www.youtube.com/embed/SfBsMbJu5d8",
               },
               {
-                name: "Lokio, Business Owner",
-                text: "I couldn't get through the first 2 minutes. Week 3 — 5 approaches in one afternoon. Coffee shop, street, bar. The system works.",
+                name: "Rob V., Business Owner",
+                text: "Stef helped me take my social skills to the next level.",
+                videoUrl: "https://www.youtube.com/embed/x9-kKonPOMs",
               },
               {
-                name: "Hitesh, Banker, Amsterdam",
-                text: "I had the looks, the career, the presence. Girls kept losing interest on dates. Fixed the frame. Kept the girl.",
+                name: "Hitesh, Coach",
+                text: "Stef helped me see all the ways I was sabotaging connections and being flaked on as a result.",
+                videoUrl: "https://www.youtube.com/embed/_oM7g4ns6T0",
               },
             ].map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="rounded-3xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
-                  {/* Video placeholder */}
-                  <div className="relative w-full aspect-video bg-black/40 flex items-center justify-center group cursor-pointer flex-shrink-0">
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                    <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-300 z-10">
-                      <Play className="w-6 h-6 text-white ml-0.5 fill-white" />
-                    </div>
-                  </div>
+                  <iframe
+                    src={t.videoUrl}
+                    title={t.name}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full aspect-video"
+                  />
                   {/* Quote + attribution */}
                   <div className="p-8 flex flex-col justify-between flex-1">
                     <p className="text-xl text-white font-medium leading-relaxed mb-6">
