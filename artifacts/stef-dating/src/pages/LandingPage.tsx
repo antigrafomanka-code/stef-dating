@@ -42,7 +42,7 @@ export default function LandingPage() {
       </motion.nav>
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
+      <section className="relative pt-16 pb-24 md:pt-20 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
             Play DIRECT. <br />
