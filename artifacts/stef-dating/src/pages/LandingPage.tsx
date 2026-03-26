@@ -212,14 +212,11 @@ export default function LandingPage() {
             direction="right"
             className="order-2 lg:order-1 w-full flex justify-center"
           >
-            {/* PHOTO PLACEHOLDER */}
-            <div className="w-full max-w-sm aspect-[3/4] bg-brand-photo rounded-[2rem] flex items-center justify-center relative shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent mix-blend-multiply" />
-              <div className="absolute inset-0 border-[8px] border-brand-bg rounded-[2rem]" />
-              <span className="text-brand-dark/40 font-bold tracking-[0.2em] uppercase text-sm z-10">
-                Photo of Stef
-              </span>
-            </div>
+            <img
+              src="/stef-profile.png"
+              alt="Stef Vervaet"
+              className="w-full max-w-sm rounded-[2rem] shadow-[0_20px_60px_rgb(0,0,0,0.15)] object-cover"
+            />
           </FadeIn>
 
           <div className="order-1 lg:order-2">
