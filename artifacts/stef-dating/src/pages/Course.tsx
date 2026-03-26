@@ -42,7 +42,7 @@ export default function Course() {
       </motion.nav>
 
       {/* HERO SECTION */}
-      <section className="relative pt-16 pb-24 md:pt-20 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
+      <section className="relative pt-16 pb-8 md:pt-20 md:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
             The Direct Method.<br />
@@ -56,45 +56,40 @@ export default function Course() {
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4 mb-24 w-full sm:w-auto">
+        <FadeIn delay={0.3} className="flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto">
           <a
             href={APPLY_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="px-10 py-5 bg-brand-dark text-white rounded-xl font-bold uppercase tracking-widest text-sm shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.2)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto text-center"
           >
-            Get the Course
+            Apply for Coaching
           </a>
         </FadeIn>
       </section>
 
       {/* COURSE CONTENT PLACEHOLDER */}
-      <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
-        <FadeIn className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-            What's inside.
+      {/* COURSE CONTENT */}
+      <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-t border-brand-dark/10">
+        <FadeIn className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-6 leading-tight">
+            The Cold Approach Blueprint.
           </h2>
+          <p className="text-xl text-brand-dark/70 font-medium leading-relaxed max-w-2xl mx-auto">
+            The 3-second rule. How to open direct. What happens in her brain in the first 2 minutes. How to get her number without asking. One framework. Repeatable. Anywhere.
+          </p>
         </FadeIn>
-
-        <div className="flex flex-col gap-8 max-w-3xl mx-auto">
-          {[1, 2, 3, 4].map((i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="rounded-2xl border-2 border-brand-dark/10 p-8 flex items-start gap-6">
-                <span className="text-4xl font-black text-brand-blue/30 leading-none">
-                  {String(i).padStart(2, "0")}
-                </span>
-                <div>
-                  <p className="text-xl font-black text-brand-dark/20 uppercase tracking-widest">
-                    Module {i} — coming soon
-                  </p>
-                  <p className="text-brand-dark/20 mt-2 font-medium">
-                    Placeholder — add your content here.
-                  </p>
-                </div>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
+        <FadeIn delay={0.2}>
+          <div className="rounded-3xl overflow-hidden shadow-[0_20px_60px_rgb(0,0,0,0.12)] aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/xKoQqkMr0nw"
+              title="The Cold Approach Blueprint"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </FadeIn>
       </section>
 
       {/* TESTIMONIALS SECTION */}
@@ -143,6 +138,16 @@ export default function Course() {
                 text: "After just 3 days with Stef, I'm meeting my ideal women, beautiful, smart, single women. I'd never go back to dating apps.",
                 videoUrl: "https://www.youtube.com/embed/Fi7tcGc2eB8",
               },
+              {
+                name: "Vlad M., Business Owner",
+                text: "I came out of the bootcamp with a superpower. I approach women I actually want. Anywhere. Anytime.",
+                videoUrl: "https://www.youtube.com/embed/0UII9VRiXFM",
+              },
+              {
+                name: "Tamer, Entrepreneur",
+                text: "Stef didn't just change my dating life. He showed me what I was capable of across every area of my life.",
+                videoUrl: "https://www.youtube.com/embed/pT_nxFQmOLM",
+              },
             ].map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="rounded-3xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-brand-blue/50 hover:-translate-y-2 transition-all duration-300">
@@ -190,15 +195,19 @@ export default function Course() {
               Apply
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/stefdating/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-brand-light hover:text-white transition-colors"
             >
               Instagram
             </a>
             <a
-              href="#"
-              className="text-brand-light hover:text-white transition-colors"
-            >
+                href="https://www.youtube.com/@stefdating"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-light hover:text-white transition-colors"
+              >
               YouTube
             </a>
           </div>

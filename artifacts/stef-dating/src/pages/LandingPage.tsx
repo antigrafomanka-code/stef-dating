@@ -44,8 +44,8 @@ export default function LandingPage() {
       {/* 1. HERO SECTION */}
       <section className="relative pt-16 pb-24 md:pt-20 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
-            Play DIRECT. <br />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
+            Get the GIRLFRIEND you want. <br />
             <span className="text-brand-dark">Or stay average forever.</span>
           </h1>
         </FadeIn>
@@ -130,10 +130,9 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-              What high-achieving men say about
+              What my clients say about the coaching:
               
               <br />
-              DIRECT method:
             </h2>
           </FadeIn>
 
@@ -212,11 +211,14 @@ export default function LandingPage() {
             direction="right"
             className="order-2 lg:order-1 w-full flex justify-center"
           >
-            <img
-              src="/stef-profile.png"
-              alt="Stef Vervaet"
-              className="w-full max-w-sm rounded-[2rem] shadow-[0_20px_60px_rgb(0,0,0,0.15)] object-cover"
-            />
+            {/* PHOTO PLACEHOLDER */}
+            <div className="w-full max-w-sm aspect-[3/4] bg-brand-photo rounded-[2rem] flex items-center justify-center relative shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent mix-blend-multiply" />
+              <div className="absolute inset-0 border-[8px] border-brand-bg rounded-[2rem]" />
+              <span className="text-brand-dark/40 font-bold tracking-[0.2em] uppercase text-sm z-10">
+                Photo of Stef
+              </span>
+            </div>
           </FadeIn>
 
           <div className="order-1 lg:order-2">
