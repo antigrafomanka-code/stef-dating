@@ -52,7 +52,8 @@ export default function LandingPage() {
 
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
-            I'm Stef. I help high-achieving men get the girlfriend they want in less than 12 weeks by mastering cold approach and confidence.
+            I'm Stef. I help high-achieving men get the girlfriend they want in
+            less than 12 weeks by mastering cold approach and confidence.
           </p>
         </FadeIn>
 
@@ -69,7 +70,7 @@ export default function LandingPage() {
             Apply for Coaching
           </a>
           <a
-            href="#how-it-works"
+            href="#testimonials"
             className="px-10 py-5 bg-transparent border-2 border-brand-dark text-brand-dark rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-brand-dark/5 hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto"
           >
             Watch how it works
@@ -91,27 +92,34 @@ export default function LandingPage() {
       </section>
 
       {/* 5. WHO THIS IS FOR SECTION */}
-      <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
+      <section className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
         <FadeIn className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
             Level up or stay average forever.
           </h2>
         </FadeIn>
 
-        <div className="flex flex-col items-center gap-8 text-2xl md:text-4xl font-bold text-brand-dark text-center max-w-4xl mx-auto mb-20">
+                  <div className="flex flex-col items-center gap-2 text-2xl md:text-4xl font-bold text-brand-dark text-center max-w-4xl mx-auto mb-4">
           <FadeIn delay={0.1}>
-            <p>The woman of your dreams doesn't fall on your lap.</p>
+            <p className="whitespace-nowrap">
+              The woman of your dreams doesn't fall on your lap.
+            </p>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p>You go get her.</p>
           </FadeIn>
-        </div>
+              <div className="flex justify-center pt-8">
+                              <a
+                                                  href="https://stefvervaet.youcanbook.me/"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  className="text-2xl font-bold tracking-widest uppercase text-brand-dark hover:text-brand-blue transition-colors px-4 py-2 hover:bg-brand-dark/5 rounded-full"
+                                                >
+                                                That's DIRECT.
+                              </a>
+              </div>
+                  </div>
 
-        <FadeIn delay={0.7}>
-          <p className="text-2xl md:text-3xl font-black text-center text-brand-blue bg-brand-blue/10 py-8 px-6 rounded-2xl mx-auto max-w-3xl">
-            That's DIRECT.
-          </p>
-        </FadeIn>
       </section>
 
       {/* 7. RESULTS SECTION */}
@@ -122,9 +130,10 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <FadeIn className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
-              Same man. Direct approach.
+              What high-achieving men say about
+              
               <br />
-              Different life.
+              DIRECT method:
             </h2>
           </FadeIn>
 
@@ -144,6 +153,31 @@ export default function LandingPage() {
                 name: "Hitesh, Coach",
                 text: "Stef helped me see all the ways I was sabotaging connections and being flaked on as a result.",
                 videoUrl: "https://www.youtube.com/embed/_oM7g4ns6T0",
+              },
+              {
+                name: "Aaron T., Lawyer",
+                text: "Stef showed me how to express myself in the most authentic way.",
+                videoUrl: "https://www.youtube.com/embed/Gz1P70osSoY",
+              },
+              {
+                name: "Jason P., Coach",
+                text: "Stef helped me live outside of my own limits.",
+                videoUrl: "https://www.youtube.com/embed/VdxiWfxckcM",
+              },
+              {
+                name: "Nicholas, Entrepreneur",
+                text: "After just 3 days with Stef, I'm meeting my ideal women, beautiful, smart, single women. I'll never go back to dating apps again.",
+                videoUrl: "https://www.youtube.com/embed/Fi7tcGc2eB8",
+              },
+              {
+                name: "Vlad M., Business Owner",
+                text: "I came out of the bootcamp with a superpower. I approach women I actually want. Anywhere. Anytime.",
+                videoUrl: "https://www.youtube.com/embed/0UII9VRiXFM",
+              },
+              {
+                name: "Tamer, Entrepreneur",
+                text: "Stef didn't just change my dating life. He showed me what I was capable of across every area of my life.",
+                videoUrl: "https://www.youtube.com/embed/pT_nxFQmOLM",
               },
             ].map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
@@ -253,7 +287,7 @@ export default function LandingPage() {
 
         <FadeIn delay={0.1}>
           <p className="text-xl md:text-3xl text-brand-light font-medium mb-16">
-            12 weeks. One-on-one. Built around your life.
+            1 week. One-on-one. Built around your life style.
           </p>
         </FadeIn>
 
@@ -297,15 +331,19 @@ export default function LandingPage() {
               Apply
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/stefdating/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-brand-light hover:text-white transition-colors"
             >
               Instagram
             </a>
             <a
-              href="#"
-              className="text-brand-light hover:text-white transition-colors"
-            >
+                href="https://www.youtube.com/@stefdating"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-light hover:text-white transition-colors"
+              >
               YouTube
             </a>
           </div>
