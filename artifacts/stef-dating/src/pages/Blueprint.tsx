@@ -1,13 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "wouter";
 
 const APPLY_URL = "https://stefvervaet.youcanbook.me/";
 
 export default function Blueprint() {
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+  const [, navigate] = useLocation();
   const { scrollY } = useScroll();
   const headerOpacity = useTransform(scrollY, [0, 50, 100], [1, 0, 1]);
   const headerBg = useTransform(
