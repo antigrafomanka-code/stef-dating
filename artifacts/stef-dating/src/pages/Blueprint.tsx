@@ -118,7 +118,7 @@ export default function Blueprint() {
             STEF DATING
           </span>
           <span className="text-brand-light text-sm tracking-widest uppercase">
-            Brussels, Belgium
+            Worldwide
           </span>
         </div>
       </footer>
