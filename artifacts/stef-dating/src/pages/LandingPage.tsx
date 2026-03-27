@@ -18,7 +18,7 @@ export default function LandingPage() {
   );
 
   return (
-    <div className="w-full bg-brand-bg min-h-screen">
+    <div className="w-full bg-brand-bg min-h-screen overflow-x-hidden">
       {/* STICKY HEADER */}
       <motion.nav
         style={{
@@ -92,7 +92,7 @@ export default function LandingPage() {
       </section>
 
       {/* 5. WHO THIS IS FOR SECTION */}
-      <section className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10">
+      <section className="py-10 md:py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-brand-dark/10 overflow-hidden">
         <FadeIn className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-brand-blue">
             Level up or stay average forever.
@@ -101,7 +101,7 @@ export default function LandingPage() {
 
                   <div className="flex flex-col items-center gap-2 text-2xl md:text-4xl font-bold text-brand-dark text-center max-w-4xl mx-auto mb-4">
           <FadeIn delay={0.1}>
-            <p className="whitespace-nowrap">
+            <p className="whitespace-normal overflow-hidden px-4 text-center">
               The woman of your dreams doesn't fall on your lap.
             </p>
           </FadeIn>
@@ -305,7 +305,8 @@ export default function LandingPage() {
         </FadeIn>
       </section>
 
-      {/* 10. FOOTER */}
+      {grep -n "min-h-screen\|Level up\|level up\|woman of your dreams\|whitespace\|Who is this\|who is this" artifacts/stef-dating/src/pages/LandingPage.tsx | head -30
+      grep -n "Level up\|gut punch\|level up\|LEVEL UP\|Who is this\|who is this\|bg-brand-dark\|bg-black\|dark section\|final CTA\|Play DIRECT\|stay average" artifacts/stef-dating/src/pages/LandingPage.tsx | head -40/* 10. FOOTER */}
       <footer className="bg-brand-dark text-white border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
