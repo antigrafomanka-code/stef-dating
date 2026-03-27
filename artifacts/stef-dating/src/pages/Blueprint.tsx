@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
-import { useState } from "react";
 import { useLocation } from "wouter";
 
 const APPLY_URL = "https://stefvervaet.youcanbook.me/";
@@ -16,16 +16,18 @@ export default function Blueprint() {
     ["rgba(245, 241, 236, 0)", "rgba(245, 241, 236, 0.9)"]
   );
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    const form = e.target;
-    const data = new FormData(form);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const pairs = Array.from(formData.entries()).map(([k, v]) => [k, String(v)]);
+    const params = new URLSearchParams(pairs as Array<[string, string]>);
 
     await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(data).toString(),
+      body: params.toString(),
     });
 
     navigate("/course");
@@ -33,7 +35,6 @@ export default function Blueprint() {
 
   return (
     <div className="w-full bg-brand-bg min-h-screen">
-      {/* STICKY HEADER */}
       <motion.nav
         style={{
           opacity: headerOpacity,
@@ -44,17 +45,16 @@ export default function Blueprint() {
         <a href="/" className="font-script text-3xl text-brand-dark tracking-wider hover:text-brand-blue transition-colors">
           STEF DATING
         </a>
-        <a
-      href={APPLY_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm font-bold tracking-widest uppercase text-brand-dark hover:text-brand-blue transition-colors px-4 py-2 hover:bg-brand-dark/5 rounded-full"
-      >
-        Apply
-      </a>
+
+          href={APPLY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm font-bold tracking-widest uppercase text-brand-dark hover:text-brand-blue transition-colors px-4 py-2 hover:bg-brand-dark/5 rounded-full"
+        >
+          Apply
+        </a>
       </motion.nav>
 
-      {/* HERO */}
       <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
           <span className="text-sm font-bold tracking-widest uppercase text-brand-blue mb-6 block">
@@ -72,7 +72,6 @@ export default function Blueprint() {
           </p>
         </FadeIn>
 
-        {/* FORM */}
         <FadeIn delay={0.3} className="w-full max-w-md">
           <form
             name="blueprint"
@@ -82,7 +81,6 @@ export default function Blueprint() {
             className="flex flex-col gap-4"
           >
             <input type="hidden" name="form-name" value="blueprint" />
-
             <input
               type="text"
               name="name"
@@ -90,7 +88,6 @@ export default function Blueprint() {
               required
               className="w-full px-6 py-4 rounded-xl border border-brand-dark/20 bg-white text-brand-dark font-medium text-base focus:outline-none focus:border-brand-blue transition-colors"
             />
-
             <input
               type="email"
               name="email"
@@ -98,7 +95,6 @@ export default function Blueprint() {
               required
               className="w-full px-6 py-4 rounded-xl border border-brand-dark/20 bg-white text-brand-dark font-medium text-base focus:outline-none focus:border-brand-blue transition-colors"
             />
-
             <input
               type="tel"
               name="phone"
@@ -106,7 +102,6 @@ export default function Blueprint() {
               required
               className="w-full px-6 py-4 rounded-xl border border-brand-dark/20 bg-white text-brand-dark font-medium text-base focus:outline-none focus:border-brand-blue transition-colors"
             />
-
             <button
               type="submit"
               disabled={loading}
@@ -114,7 +109,6 @@ export default function Blueprint() {
             >
               {loading ? "Loading..." : "Get instant access →"}
             </button>
-
             <p className="text-sm text-brand-dark/40 font-medium">
               No spam. Ever.
             </p>
@@ -122,7 +116,6 @@ export default function Blueprint() {
         </FadeIn>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-brand-dark text-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="font-script text-2xl tracking-wider">STEF DATING</span>
