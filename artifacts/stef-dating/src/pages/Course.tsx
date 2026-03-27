@@ -45,8 +45,9 @@ export default function Course() {
       <section className="relative pt-16 pb-8 md:pt-20 md:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
         <FadeIn delay={0.1}>
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-brand-blue tracking-tighter leading-[1.1] mb-8">
-            The Direct Method.<br />
-            <span className="text-brand-dark">The Course.</span>
+            Get the GIRLFRIEND you want.
+<br />
+            <span className="text-brand-dark">The Cold Approach Blueprint.</span>
           </h1>
         </FadeIn>
 
