@@ -213,11 +213,8 @@ export default function LandingPage() {
           >
             {/* PHOTO PLACEHOLDER */}
             <div className="w-full max-w-sm aspect-[3/4] bg-brand-photo rounded-[2rem] flex items-center justify-center relative shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent mix-blend-multiply" />
-              <div className="absolute inset-0 border-[8px] border-brand-bg rounded-[2rem]" />
-              <span className="text-brand-dark/40 font-bold tracking-[0.2em] uppercase text-sm z-10">
-                Photo of Stef
-              </span>
+              <img src="/stef-profile.png" alt="Stef" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 border-[8px] border-brand-bg rounded-[2rem]" />
             </div>
           </FadeIn>
 

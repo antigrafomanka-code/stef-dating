@@ -23,29 +23,27 @@ export default function Blueprint() {
     const formData = new FormData(form);
     const pairs = Array.from(formData.entries()).map(([k, v]) => [k, String(v)]);
     const params = new URLSearchParams(pairs as Array<[string, string]>);
-
     await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: params.toString(),
     });
-
     navigate("/course");
   };
 
   return (
     <div className="w-full bg-brand-bg min-h-screen">
       <motion.nav
-        style={{
-          opacity: headerOpacity,
-          backgroundColor: headerBg,
-        }}
+        style={{ opacity: headerOpacity, backgroundColor: headerBg }}
         className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md"
       >
-        <a href="/" className="font-script text-3xl text-brand-dark tracking-wider hover:text-brand-blue transition-colors">
+        <a
+          href="/"
+          className="font-script text-3xl text-brand-dark tracking-wider hover:text-brand-blue transition-colors"
+        >
           STEF DATING
         </a>
-
+        <a
           href={APPLY_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -65,13 +63,11 @@ export default function Blueprint() {
             <span className="text-brand-blue">Cold Approach Blueprint.</span>
           </h1>
         </FadeIn>
-
         <FadeIn delay={0.2}>
           <p className="text-lg md:text-xl text-brand-dark/70 max-w-xl mx-auto mb-12 font-medium leading-relaxed">
             Everything I teach my 1-on-1 clients — structured into a step-by-step programme you can start today.
           </p>
         </FadeIn>
-
         <FadeIn delay={0.3} className="w-full max-w-md">
           <form
             name="blueprint"
@@ -118,8 +114,12 @@ export default function Blueprint() {
 
       <footer className="bg-brand-dark text-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="font-script text-2xl tracking-wider">STEF DATING</span>
-          <span className="text-brand-light text-sm tracking-widest uppercase">Brussels, Belgium</span>
+          <span className="font-script text-2xl tracking-wider">
+            STEF DATING
+          </span>
+          <span className="text-brand-light text-sm tracking-widest uppercase">
+            Brussels, Belgium
+          </span>
         </div>
       </footer>
     </div>
