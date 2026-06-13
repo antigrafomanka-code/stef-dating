@@ -140,7 +140,7 @@ export default function LandingPage() {
             {[
               {
                 name: "Thomas S., Entrepreneur",
-                text: "Getting 1-1 custom feedback from Stef was the most valuable experience.",
+                text: "I went from being unable to talk to people to endless possibilities in dating and other areas of my life.",
                 videoUrl: "https://www.youtube.com/embed/n8UHOWsKjVM",
               },
               {
