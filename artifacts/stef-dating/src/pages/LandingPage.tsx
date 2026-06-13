@@ -139,9 +139,14 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Steve L., Entrepreneur",
+                name: "Thomas S., Entrepreneur",
                 text: "Getting 1-1 custom feedback from Stef was the most valuable experience.",
-                videoUrl: "https://www.youtube.com/embed/SfBsMbJu5d8",
+                videoUrl: "https://www.youtube.com/embed/n8UHOWsKjVM",
+              },
+              {
+                name: "Steve L., Entrepreneur",
+                  text: "Getting 1-1 custom feedback from Stef was the most valuable experience.",
+                  videoUrl: "https://www.youtube.com/embed/SfBsMbJu5d8",
               },
               {
                 name: "Rob V., Business Owner",
