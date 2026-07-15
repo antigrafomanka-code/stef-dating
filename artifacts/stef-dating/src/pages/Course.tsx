@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
 
-const APPLY_URL = "https://stefvervaet.youcanbook.me/";
+const APPLY_URL = "https://calendly.com/stefaanvervaet1/60min";
 
 export default function Course() {
   const { scrollY } = useScroll();

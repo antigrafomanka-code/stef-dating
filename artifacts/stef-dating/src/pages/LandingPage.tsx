@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
 
-const APPLY_URL = "https://stefvervaet.youcanbook.me/";
+const APPLY_URL = "https://calendly.com/stefaanvervaet1/60min";
 
 export default function LandingPage() {
   const { scrollY } = useScroll();
@@ -110,7 +110,7 @@ export default function LandingPage() {
           </FadeIn>
               <div className="flex justify-center pt-8">
                               <a
-                                                  href="https://stefvervaet.youcanbook.me/"
+                                                  href="https://calendly.com/stefaanvervaet1/60min"
                                                   target="_blank"
                                                   rel="noopener noreferrer"
                                                   className="text-2xl font-bold tracking-widest uppercase text-brand-dark hover:text-brand-blue transition-colors px-4 py-2 hover:bg-brand-dark/5 rounded-full"

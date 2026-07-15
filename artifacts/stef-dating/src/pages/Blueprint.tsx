@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/FadeIn";
 import { useLocation } from "wouter";
 
-const APPLY_URL = "https://stefvervaet.youcanbook.me/";
+const APPLY_URL = "https://calendly.com/stefaanvervaet1/60min";
 
 export default function Blueprint() {
   const [loading, setLoading] = useState(false);
