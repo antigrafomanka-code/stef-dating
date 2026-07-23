@@ -53,7 +53,7 @@ export default function LandingPage() {
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             I'm Stef. I help high-achieving men get the girlfriend they want in
-            less than 12 weeks by mastering cold approach and confidence. Limited spots. Results or I don't take your money.
+            less than 12 weeks by mastering cold approach and confidence.
           </p>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-bold leading-relaxed">
             Limited spots. Results or I don't take your money.
