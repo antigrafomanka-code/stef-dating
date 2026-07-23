@@ -53,7 +53,7 @@ export default function LandingPage() {
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-brand-dark/80 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             I'm Stef. I help high-achieving men get the girlfriend they want in
-            less than 12 weeks by mastering cold approach and confidence.
+            less than 12 weeks by mastering cold approach and confidence. Limited spots. Results or I don't take your money.
           </p>
         </FadeIn>
 
@@ -140,12 +140,12 @@ export default function LandingPage() {
             {[
               {
                 name: "Thomas S., Entrepreneur",
-                text: "I went from being unable to talk to people to endless possibilities in dating and other areas of my life.",
+                text: "I went from being unable to talk to people to having 2 dates within a weekend of working with Stef.",
                 videoUrl: "https://www.youtube.com/embed/n8UHOWsKjVM",
               },
               {
                 name: "Steve L., Entrepreneur",
-                  text: "Getting 1-1 custom feedback from Stef was the most valuable experience.",
+                  text: "Getting 1-1 custom feedback from Stef was the most valuable experience.I went from low-quality dates to meeting my dream GF after coaching with Stef",
                   videoUrl: "https://www.youtube.com/embed/SfBsMbJu5d8",
               },
               {
@@ -170,7 +170,7 @@ export default function LandingPage() {
               },
               {
                 name: "Nicholas, Entrepreneur",
-                text: "After just 3 days with Stef, I'm meeting my ideal women, beautiful, smart, single women. I'll never go back to dating apps again.",
+                text: "After just 3 days with Stef, I'm meeting my ideal women, beautiful, smart, single women. I'll never go back to dating apps again. In less than a week after, I started dating a woman that I actually like.",
                 videoUrl: "https://www.youtube.com/embed/Fi7tcGc2eB8",
               },
               {
