@@ -142,47 +142,52 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Thomas S., Entrepreneur",
+                name: "Chris, Business owner, Zurich",
+                text: "I'm now able to meet high quality women in every city. I have at least 3 dates a week now with women that could be my potential partner.",
+                videoUrl: "https://www.youtube.com/embed/bro1adrGv84",
+              },
+              {
+                name: "Thomas S., Entrepreneur, London",
                 text: "I went from being unable to talk to people to having 2 dates within a weekend of working with Stef.",
                 videoUrl: "https://www.youtube.com/embed/n8UHOWsKjVM",
               },
               {
-                name: "Steve L., Entrepreneur",
+                name: "Steve L., Entrepreneur, Berlin",
                   text: "Getting 1-1 custom feedback from Stef was the most valuable experience.I went from low-quality dates to meeting my dream GF after coaching with Stef",
                   videoUrl: "https://www.youtube.com/embed/SfBsMbJu5d8",
               },
               {
-                name: "Rob V., Business Owner",
+                name: "Rob V., Business Owner, Brussels",
                 text: "Stef helped me take my social skills to the next level.",
                 videoUrl: "https://www.youtube.com/embed/x9-kKonPOMs",
               },
               {
-                name: "Hitesh, Coach",
+                name: "Hitesh, Coach, Singapore",
                 text: "Stef helped me see all the ways I was sabotaging connections and being flaked on as a result.",
                 videoUrl: "https://www.youtube.com/embed/_oM7g4ns6T0",
               },
               {
-                name: "Aaron T., Lawyer",
+                name: "Aaron T., Lawyer, Berlin",
                 text: "Stef showed me how to express myself in the most authentic way.",
                 videoUrl: "https://www.youtube.com/embed/Gz1P70osSoY",
               },
               {
-                name: "Jason P., Coach",
+                name: "Jason P., Coach, Barcelona",
                 text: "Stef helped me live outside of my own limits.",
                 videoUrl: "https://www.youtube.com/embed/VdxiWfxckcM",
               },
               {
-                name: "Nicholas, Entrepreneur",
+                name: "Nicholas, Entrepreneur, Hanoi",
                 text: "After just 3 days with Stef, I'm meeting my ideal women, beautiful, smart, single women. I'll never go back to dating apps again. In less than a week after, I started dating a woman that I actually like.",
                 videoUrl: "https://www.youtube.com/embed/Fi7tcGc2eB8",
               },
               {
-                name: "Vlad M., Business Owner",
+                name: "Vlad M., Business Owner, London",
                 text: "I came out of the bootcamp with a superpower. I approach women I actually want. Anywhere. Anytime.",
                 videoUrl: "https://www.youtube.com/embed/0UII9VRiXFM",
               },
               {
-                name: "Tamer, Entrepreneur",
+                name: "Tamer, Entrepreneur, Zurich",
                 text: "Stef didn't just change my dating life. He showed me what I was capable of across every area of my life.",
                 videoUrl: "https://www.youtube.com/embed/pT_nxFQmOLM",
               },
